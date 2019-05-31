@@ -31,7 +31,7 @@
 
 <header class="navigation fixed-top">
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand font-tertiary h3" href="index.html"><img src="images/logo.png" alt="Myself"></a>
+    <!-- <a class="navbar-brand font-tertiary h3" href="index.html"><img src="images/logo.png" alt="Myself"></a> -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -83,53 +83,48 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h3 class="font-tertiary mb-5">What should be the proper purpose of UI and UX design?</h3>
-        <p class="font-secondary">Published on May 26, 2017 by <span class="text-primary">uixgeek</span
-            class="text-primary"> on <span>UX design</span></p>
+        <h3 class="font-tertiary mb-5">React Main Concepts and Features</h3>
         <div class="content">
           <img src="images/blog/post-1.jpg" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
-          <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.</strong>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-            ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
-            labore et dolore magnam aliquam quaerat voluptatem.</p>
-          <blockquote>Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
-            tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</blockquote>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-            ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
-            labore et dolore magnam aliquam quaerat voluptatem.</p>
+          <strong>1. JSX </strong>
+          <p>JSX stands for Javascript Syntax Extension. It is a syntax extension for Javascript, it allows writting 
+            JS with XML like tags. The JSX structure of a React App is the Virtual DOM which React uses. In order to use JS expression
+            in a JSX object, one should wrap the expression in curly braces. One can log to the console from JSX, call functions, make
+            simple calculations, render items conditionally or render lists.
+          </p>
+          <strong>2. Data Flow </strong>
+          <p>Data Flow in React only flows in one direction. Parent components pass data to child components. The data that a child receives is 
+            called props. To send data back to the parent, a component can use events.
+          </p>
+            <strong>3. Components </strong>
+          <p>The components in React take form of Javascript classes.  A component can be created by extending upon the React Component class. 
+            Components are used to group features, encapsulate logic and render specific JSX content. The render() method is required inside a 
+            component and it returns the JSX specific to the component, which will be compiled and rendered into HTML later.
+          </p>
+          <strong>4. Component Lifecycle </strong>
+          <p>Lifecycle methods are hooks which allow execution of code at set points during the component's lifetime. We discussed the render 
+            method above. The main lifecycle hooks are categorized for: mounting, updating, unmounting and error handling.
+          </p>
+          <strong>5. Props and State </strong>
+          <p>As described above, the props are data that a component is getting passed by its parent. There is also one more type of data in React,
+             called "state". The state is the private data of a component, that is locally managed and used.
+
+              The main difference between those two is that the state is private, while the props aren’t - the state can be only modified locally 
+              inside a component (as it is private), while the props can’t be changed by the component, but only by the parent component that passed 
+              them. Very often props can become a part of the state in order to be manipulated.
+          </p>
+          <strong>6. Events </strong>
+          <p>Handling events with React elements is very similar to handling events on DOM elements. There are some syntactic differences:
+              <p>-React events are named using camelCase, rather than lowercase.</p>
+              <p>-With JSX you pass a function as the event handler, rather than a string.</p>
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section>
+<!-- <section>
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -181,10 +176,10 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- blog -->
-<section class="section">
+<!-- <section class="section">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -231,11 +226,11 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- /blog -->
 
 <!-- contact -->
-<section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
+<!-- <section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -263,7 +258,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- /contact -->
 
 <!-- footer -->
@@ -273,24 +268,18 @@
       <div class="row">
         <div class="col-md-4">
           <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">steve.fruits@email.com</p>
+          <p class="text-white paragraph-lg font-secondary">alexandrah274@gmail.com</p>
         </div>
-        <div class="col-md-4">
+        <!-- <div class="col-md-4">
           <h5 class="text-light">Phone</h5>
           <p class="text-white paragraph-lg font-secondary">+880 2544 658 256</p>
         </div>
         <div class="col-md-4">
           <h5 class="text-light">Address</h5>
           <p class="text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
-        </div>
+        </div> -->
       </div>
     </div>
-  </div>
-  <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Copyright ©<script>
-        var CurrentYear = new Date().getFullYear()
-        document.write(CurrentYear)
-      </script> a theme by <a href="themefisher.com">themefisher.com</a></p>
   </div>
 </footer>
 <!-- /footer -->
